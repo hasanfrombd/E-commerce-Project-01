@@ -51,7 +51,6 @@ header nav{
 }
 /* header section start  */
 .headerSection{
-    /* border: 1px solid red; */
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
@@ -239,4 +238,80 @@ span{
 .ftr-area p span{
     color: #fff;
     font-size: larger;
+}
+/* Responsive design code start  */
+
+@media(max-width:768px){
+    .headerSection{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .headerSection img{
+        width: 60%;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .title{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        margin-top: 50px;
+    }
+    .content-area{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img-area{
+        margin: 0 auto;
+    }
+    .img-area img{
+        border-radius: 10px;
+    }
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        margin-top: -50px;
+    }
+    .text-area h1{
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+    .text-area h2{
+        font-size: 2rem;
+    }
+    .sideIcons{
+        top: 15%;
+    }
+}
+@media (max-width:500px) {
+    .searchArea{
+        display: none;
+    }
+    .sideIcons{
+        display: none;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .ftr-area{
+        text-align: center;
+    }
 }
