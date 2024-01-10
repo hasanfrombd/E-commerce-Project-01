@@ -241,7 +241,7 @@ span{
 }
 /* Responsive design code start  */
 
-@media(max-width:768px){
+@media (max-width:768px) {
     .headerSection{
         flex-direction: column;
         gap: 50px;
@@ -313,5 +313,27 @@ span{
     }
     .ftr-area{
         text-align: center;
+    }
+    .img-area img{
+        width: 60%;
+        border-radius: 10px;
+    }
+    .img-area{
+        margin: 0 auto;
+    }
+    .content-area{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .text-area{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .text-area h1,h2{
+        font-size: 2rem;
     }
 }
